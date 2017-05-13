@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ScheduleApp</string>
+
+    <string name="sing_title">店舗A</string>
+    <string name="sing_content">Open19:00 Start19:30</string>
+    <string name="sing_detail">detal_song</string>
+    <!--<string name="sing_meaning">歌う</string>-->
+
+    <string name="voice_title">店舗B</string>
+    <string name="voice_content">Open20:00 Start20:30</string>
+    <string name="voice_detail">detal_voice</string>
+    <!--<string name="voice_meaning">声</string>-->
+
+    <string name="sing_title0">店舗C</string>
+    <string name="sing_content0">Open19:00 Start19:30</string>
+    <string name="sing_detail0">detal_song</string>
+    <!--<string name="sing_meaning">歌う</string>-->
+
+    <string name="voice_title0">店舗D</string>
+    <string name="voice_content0">Open20:00 Start20:30</string>
+    <string name="voice_detail0">detal_voice</string>
+    <!--<string name="voice_meaning">声</string>-->
+
+    <string name="sing_title2">店舗E</string>
+    <string name="sing_content2">Open19:00 Start19:30</string>
+    <string name="sing_detail2">detal_song</string>
+    <!--<string name="sing_meaning">歌う</string>-->
+
+    <string name="voice_title2">店舗F</string>
+    <string name="voice_content2">Open20:00 Start20:30</string>
+    <string name="voice_detail2">detal_voice</string>
+    <!--<string name="voice_meaning">声</string>-->
+
+
+
+
+</resources>
