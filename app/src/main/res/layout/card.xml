@@ -38,24 +38,24 @@
                     android:textSize="@dimen/text_size_title"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/like_textview"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="@dimen/card_item_title_margin"
-                    android:layout_weight="2"
-                    android:gravity="center"
-                    android:text="0 Likes"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="@dimen/text_size_medium"
-                    android:textStyle="italic"/>
+                <!--<TextView-->
+                    <!--android:id="@+id/like_textview"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginRight="@dimen/card_item_title_margin"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="0 Likes"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:textSize="@dimen/text_size_medium"-->
+                    <!--android:textStyle="italic"/>-->
 
-                <ImageView
-                    android:id="@+id/like_button"
-                    android:layout_width="@dimen/card_item_favorite_size"
-                    android:layout_height="@dimen/card_item_favorite_size"
-                    android:scaleType="centerInside"
-                    android:src="@drawable/favorite_pink"/>
+                <!--<ImageView-->
+                    <!--android:id="@+id/like_button"-->
+                    <!--android:layout_width="@dimen/card_item_favorite_size"-->
+                    <!--android:layout_height="@dimen/card_item_favorite_size"-->
+                    <!--android:scaleType="centerInside"-->
+                    <!--android:src="@drawable/favorite_pink"/>-->
 
 
 

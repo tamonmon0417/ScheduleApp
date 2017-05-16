@@ -48,12 +48,14 @@ public class CardAdapter extends ArrayAdapter<Card>{
         public ViewHolder(View view){
             iconImageView = (ImageView) view.findViewById(R.id.icon);
             titleTextView = (TextView) view.findViewById(R.id.titele_textview);
-            likeTextView = (TextView) view.findViewById(R.id.like_textview);
+//            likeTextView = (TextView) view.findViewById(R.id.like_textview);
             contentTextView = (TextView) view.findViewById(R.id.content);
-            likeButton = (ImageView) view.findViewById(R.id.like_button);
+//            likeButton = (ImageView) view.findViewById(R.id.like_button);
 
         }
     }
+
+
 
 
 
@@ -74,19 +76,20 @@ public class CardAdapter extends ArrayAdapter<Card>{
             viewHolder.iconImageView.setBackgroundResource(item.imageId);
             viewHolder.titleTextView.setText(item.title);
             viewHolder.contentTextView.setText(item.content);
-            viewHolder.likeButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    item.likeNum++;
-                    viewHolder.likeTextView.setText(item.likeNum + "Likes");
-                }
-            });
+//            viewHolder.likeButton.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    item.likeNum++;
+//                    viewHolder.likeTextView.setText(item.likeNum + "Likes");
+//                }
+//            });
 //            viewHolder.iconImageView.setOnClickListener(new View.OnClickListener(){
 //                @Override
 //                public void onClick(View v){
 //                    Toast.makeText(getContext(), item.meaning, Toast.LENGTH_SHORT).show();
 //                }
 //            });
+
         }
 
         return convertView;

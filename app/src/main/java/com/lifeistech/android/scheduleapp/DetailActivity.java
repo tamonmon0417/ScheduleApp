@@ -25,16 +25,16 @@ public class DetailActivity extends AppCompatActivity {
 
         iconImageView = (ImageView) findViewById(R.id.icon);
         titleTextView = (TextView) findViewById(R.id.titele_textview);
-        likeTextView = (TextView) findViewById(R.id.like_textview);
+//        likeTextView = (TextView) findViewById(R.id.like_textview);
         contentTextView = (TextView) findViewById(R.id.content);
-        likeButton = (ImageView) findViewById(R.id.like_button);
+//        likeButton = (ImageView) findViewById(R.id.like_button);
 
         Intent intent = getIntent();
         Card card = (Card) intent.getSerializableExtra("key");
 //        Log.d("TAG", card.detail);
         iconImageView.setImageResource(card.imageId);
         titleTextView.setText(card.title);
-        contentTextView.setText(card.content);
+        contentTextView.setText(card.detail);
 
 
 
