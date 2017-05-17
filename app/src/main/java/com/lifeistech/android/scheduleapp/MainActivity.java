@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -37,13 +38,10 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<ArrayList<Card>> eventArray;
     int position = 1;
 
+    static Date nowDate = new Date();
 
 
-
-
-
-
-//以下　リストビュー
+    //以下　リストビュー
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,49 +51,49 @@ public class MainActivity extends AppCompatActivity {
         mCards = new ArrayList<Card>();
 
         mCards.add(new Card(R.drawable.image1, getString(R.string.data1_title0),
-                getString(R.string.data1_content0), getString(R.string.data1_detail0)));
+                getString(R.string.data1_content0), getString(R.string.data1_detail0),"2017/5/17"));
         mCards.add(new Card(R.drawable.image1, getString(R.string.data1_title1),
-                getString(R.string.data1_content1),getString(R.string.data1_detail1)));
+                getString(R.string.data1_content1), getString(R.string.data1_detail1),"2017/5/17"));
         mCards.add(new Card(R.drawable.image1, getString(R.string.data1_title2),
-                getString(R.string.data1_content2), getString(R.string.data1_detail2)));
+                getString(R.string.data1_content2), getString(R.string.data1_detail2),"2017/5/17"));
         mCards.add(new Card(R.drawable.image1, getString(R.string.data1_title3),
-                getString(R.string.data1_content3),getString(R.string.data1_detail3)));
+                getString(R.string.data1_content3), getString(R.string.data1_detail3),"2017/5/17"));
         mCards.add(new Card(R.drawable.image1, getString(R.string.data1_title4),
-                getString(R.string.data1_content4), getString(R.string.data1_detail4)));
+                getString(R.string.data1_content4), getString(R.string.data1_detail4,"2017/5/17"),"2017/5/17"));
         mCards.add(new Card(R.drawable.image1, getString(R.string.data1_title5),
-                getString(R.string.data1_content5),getString(R.string.data1_detail5)));
+                getString(R.string.data1_content5), getString(R.string.data1_detail5,"2017/5/17","2017/5/17"),"2017/5/17"));
 
 
         mCards0 = new ArrayList<Card>();
 
         mCards0.add(new Card(R.drawable.image1, getString(R.string.data0_title0),
-                getString(R.string.data0_content0), getString(R.string.data0_detail0)));
+                getString(R.string.data0_content0), getString(R.string.data0_detail0,"2017/5/17","2017/5/17"),"2017/5/17"));
         mCards0.add(new Card(R.drawable.image1, getString(R.string.data0_title1),
-                getString(R.string.data0_content1),getString(R.string.data0_detail1)));
+                getString(R.string.data0_content1), getString(R.string.data0_detail1,"2017/5/17","2017/5/17"),"2017/5/17"));
         mCards0.add(new Card(R.drawable.image1, getString(R.string.data0_title2),
-                getString(R.string.data0_content2), getString(R.string.data0_detail2)));
+                getString(R.string.data0_content2), getString(R.string.data0_detail2,"2017/5/17"),"2017/5/17"));
         mCards0.add(new Card(R.drawable.image1, getString(R.string.data0_title3),
-                getString(R.string.data0_content3),getString(R.string.data0_detail3)));
+                getString(R.string.data0_content3), getString(R.string.data0_detail3,"2017/5/17"),"2017/5/17"));
         mCards0.add(new Card(R.drawable.image1, getString(R.string.data0_title4),
-                getString(R.string.data0_content4), getString(R.string.data0_detail4)));
+                getString(R.string.data0_content4), getString(R.string.data0_detail4,"2017/5/17"),"2017/5/17"));
         mCards0.add(new Card(R.drawable.image1, getString(R.string.data0_title5),
-                getString(R.string.data0_content5),getString(R.string.data0_detail5)));
+                getString(R.string.data0_content5), getString(R.string.data0_detail5),"2017/5/17"));
 
         mCards2 = new ArrayList<Card>();
 
 
         mCards2.add(new Card(R.drawable.image1, getString(R.string.data2_title0),
-                getString(R.string.data2_content0), getString(R.string.data2_detail0)));
+                getString(R.string.data2_content0), getString(R.string.data2_detail0),"2017/5/17"));
         mCards2.add(new Card(R.drawable.image1, getString(R.string.data2_title1),
-                getString(R.string.data2_content1),getString(R.string.data2_detail1)));
+                getString(R.string.data2_content1), getString(R.string.data2_detail1),"2017/5/17"));
         mCards2.add(new Card(R.drawable.image1, getString(R.string.data2_title2),
-                getString(R.string.data2_content2), getString(R.string.data2_detail2)));
+                getString(R.string.data2_content2), getString(R.string.data2_detail2),"2017/5/17"));
         mCards2.add(new Card(R.drawable.image1, getString(R.string.data2_title3),
-                getString(R.string.data2_content3),getString(R.string.data2_detail3)));
+                getString(R.string.data2_content3), getString(R.string.data2_detail3),"2017/5/17"));
         mCards2.add(new Card(R.drawable.image1, getString(R.string.data2_title4),
-                getString(R.string.data2_content4), getString(R.string.data2_detail4)));
+                getString(R.string.data2_content4), getString(R.string.data2_detail4),"2017/5/17"));
         mCards2.add(new Card(R.drawable.image1, getString(R.string.data2_title5),
-                getString(R.string.data2_content5),getString(R.string.data2_detail5)));
+                getString(R.string.data2_content5), getString(R.string.data2_detail5),"2017/5/17"));
 
 
         eventArray = new ArrayList<>();
@@ -111,44 +109,57 @@ public class MainActivity extends AppCompatActivity {
         mCardAdapter = new CardAdapter(this, R.layout.card, showArray);
         mListView.setAdapter(mCardAdapter);
 
-        final Date nowDate = new Date();
 
-
-
-
-        Button before = (Button)findViewById(R.id.before);
+        Button before = (Button) findViewById(R.id.before);
 //        before.setText("before");
         before.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (position != 0) {
-                position--;
-                showArray.clear();
-                showArray.addAll(eventArray.get(position));
-                mCardAdapter.notifyDataSetChanged();
+                    position--;
+                    showArray.clear();
+                    showArray.addAll(eventArray.get(position));
+                    mCardAdapter.notifyDataSetChanged();
 
-                Calendar cal = Calendar.getInstance();
-                cal.setTime(nowDate);
-                cal.add(Calendar.DAY_OF_MONTH, -1);
+                    Calendar cal = Calendar.getInstance();
+                    cal.setTime(nowDate);
+                    cal.add(Calendar.DAY_OF_MONTH, -1);
+                    nowDate = cal.getTime();
+
+                    String strDate = new SimpleDateFormat("yyyy-MM-dd", Locale.US).format(cal.getTime());
+                    Log.e("TAG", strDate);
+
+                    TextView textView = (TextView) findViewById(R.id.date);
+                    textView.setText(strDate);
 
                 }
             }
         });
 
-        Button next = (Button)findViewById(R.id.next);
+        Button next = (Button) findViewById(R.id.next);
 //        next.setText("next");
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (position != 2){
-                position ++;
-                showArray.clear();
-                showArray.addAll(eventArray.get(position));
-                mCardAdapter.notifyDataSetChanged();
+                if (position != 2) {
+                    position++;
+                    showArray.clear();
+                    showArray.addAll(eventArray.get(position));
+                    mCardAdapter.notifyDataSetChanged();
 
-                Calendar cal = Calendar.getInstance();
-                cal.setTime(nowDate);
-                cal.add(Calendar.DAY_OF_MONTH, 1);
+                    Calendar cal = Calendar.getInstance();
+                    cal.setTime(nowDate);
+                    cal.add(Calendar.DAY_OF_MONTH, 1);
+
+                    nowDate = cal.getTime();//基準を更新
+
+
+                    String strDate = new SimpleDateFormat("yyyy-MM-dd", Locale.US).format(cal.getTime());
+                    Log.e("TAG", strDate);
+
+                    TextView textView = (TextView) findViewById(R.id.date);
+                    textView.setText(strDate);
+
                 }
 
             }
@@ -159,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(MainActivity.this, DetailActivity.class);
-                intent.putExtra("key",showArray.get(position));
+                intent.putExtra("key", showArray.get(position));
                 startActivity(intent);
 
             }
@@ -174,12 +185,11 @@ public class MainActivity extends AppCompatActivity {
         // 翌日
 
 
-        TextView textView = (TextView)findViewById(R.id.date);
+        TextView textView = (TextView) findViewById(R.id.date);
         textView.setText(strDate);
 
 
     }
-
 
 
 }
