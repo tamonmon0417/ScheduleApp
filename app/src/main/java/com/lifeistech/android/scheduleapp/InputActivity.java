@@ -18,7 +18,7 @@ public class InputActivity extends AppCompatActivity {
     EditText contentEditText;
     EditText detailEditText;
     EditText dateEditText;
-    SharedPreferences pref;
+//    SharedPreferences pref;
 
 
     @Override
@@ -36,7 +36,7 @@ public class InputActivity extends AppCompatActivity {
         detailEditText.selectAll();
         dateEditText.selectAll();
 
-        final String title = titleEditText.getText() .toString();
+        final String titele_textview = titleEditText.getText() .toString();
         final String content = contentEditText.getText() .toString();
         final String detail = detailEditText.getText() .toString();
         final String date = titleEditText.getText() .toString();
@@ -48,7 +48,7 @@ public class InputActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                Card card = new Card(title, content, detail, date);
+                Card card = new Card(titele_textview, content, detail, date);
                 MainActivity.mCards.add(card);
 
                 MainActivity.init();
