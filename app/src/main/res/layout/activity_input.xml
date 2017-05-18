@@ -50,7 +50,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
+            android:inputType="text"
             android:ems="10"
             android:id="@+id/date"
             android:layout_marginTop="58dp"
@@ -93,7 +93,7 @@
             android:layout_weight="0.05" />
 
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
