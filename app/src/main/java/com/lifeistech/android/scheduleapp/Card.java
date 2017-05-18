@@ -14,7 +14,7 @@ public class Card implements Serializable {
     public String date;
 
 
-    public Card(){
+    public Card(String title, String content, String detail, String date){
 
     }
 

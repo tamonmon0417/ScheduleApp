@@ -31,7 +31,15 @@ public class InputActivity extends AppCompatActivity {
         detailEditText = (EditText) findViewById(R.id.detail);
         dateEditText = (EditText) findViewById(R.id.date);
 
+        titleEditText.selectAll();
+        contentEditText.selectAll();
+        detailEditText.selectAll();
+        dateEditText.selectAll();
 
+        final String title = titleEditText.getText() .toString();
+        final String content = contentEditText.getText() .toString();
+        final String detail = detailEditText.getText() .toString();
+        final String date = titleEditText.getText() .toString();
 
 
         Button input = (Button) findViewById(R.id.inputButton);
@@ -39,9 +47,8 @@ public class InputActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(InputActivity.this, MainActivity.class);
 
-                Card card = new Card((String)title, (String)content, (String)detail, (String)date);
+                Card card = new Card(title, content, detail, date);
                 MainActivity.mCards.add(card);
 
                 MainActivity.init();
@@ -49,7 +56,6 @@ public class InputActivity extends AppCompatActivity {
                 finish();
 
 
-                startActivity(intent);
 
             }
 

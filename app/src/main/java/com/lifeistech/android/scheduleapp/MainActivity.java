@@ -247,12 +247,7 @@ public class MainActivity extends AppCompatActivity {
         eventArray.add(todayArray);
         eventArray.add(tommorowArray);
 
-        Card card = new Card((String)title, (String)content, (String)detail, (String)date);
-        MainActivity.mCards.add(card);
 
-        MainActivity.init();
-        MainActivity.mCardAdapter.notifyDataSetChanged();
-        finish();
 
 
 
