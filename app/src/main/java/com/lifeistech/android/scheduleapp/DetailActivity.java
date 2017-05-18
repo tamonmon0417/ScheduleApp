@@ -23,6 +23,10 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
 
 
+
+
+
+
         iconImageView = (ImageView) findViewById(R.id.icon);
         titleTextView = (TextView) findViewById(R.id.titele_textview);
 //        likeTextView = (TextView) findViewById(R.id.like_textview);

@@ -7,95 +7,89 @@
     <string name="data1_detail0">詳細a</string>
     <!--<string name="sing_meaning">歌う</string>-->
 
-    <string name="data1_title1">店舗B</string>
+    <string name="data1_title1">店舗A</string>
     <string name="data1_content1">5月14日(日)Open20:00 Start20:30</string>
     <string name="data1_detail1">詳細b</string>
     <!--<string name="voice_meaning">声</string>-->
 
-    <string name="data1_title2">店舗C</string>
+    <string name="data1_title2">店舗A</string>
     <string name="data1_content2">5月14日(日)Open19:00 Start19:30</string>
     <string name="data1_detail2">詳細a</string>
     <!--<string name="sing_meaning">歌う</string>-->
 
-    <string name="data1_title3">店舗D</string>
+    <string name="data1_title3">店舗A</string>
     <string name="data1_content3">5月14日(日)Open20:00 Start20:30</string>
     <string name="data1_detail3">詳細b</string>
 
-    <string name="data1_title4">店舗E</string>
+    <string name="data1_title4">店舗D</string>
     <string name="data1_content4">5月14日(日)Open19:00 Start19:30</string>
     <string name="data1_detail4">詳細a</string>
     <!--<string name="sing_meaning">歌う</string>-->
 
-    <string name="data1_title5">店舗F</string>
+    <string name="data1_title5">店舗D</string>
     <string name="data1_content5">5月14日(日)Open20:00 Start20:30</string>
     <string name="data1_detail5">詳細b</string>
 
 
-
     <string name="date0">5月13日(土)</string>
-    <string name="data0_title0">店舗C</string>
+    <string name="data0_title0">店舗B</string>
     <string name="data0_content0">5月13日(土)Open19:00 Start19:30</string>
     <string name="data0_detail0">詳細c</string>
     <!--<string name="sing_meaning">歌う</string>-->
 
-    <string name="data0_title1">店舗D</string>
+    <string name="data0_title1">店舗B</string>
     <string name="data0_content1">5月13日(土)Open20:00 Start20:30</string>
     <string name="data0_detail1">詳細d</string>
     <!--<string name="voice_meaning">声</string>-->
 
-    <string name="data0_title2">店舗C</string>
+    <string name="data0_title2">店舗B</string>
     <string name="data0_content2">5月13日(土)Open19:00 Start19:30</string>
     <string name="data0_detail2">詳細c</string>
     <!--<string name="sing_meaning">歌う</string>-->
 
-    <string name="data0_title3">店舗D</string>
+    <string name="data0_title3">店舗B</string>
     <string name="data0_content3">5月13日(土)Open20:00 Start20:30</string>
     <string name="data0_detail3">詳細d</string>
     <!--<string name="voice_meaning">声</string>-->
 
-    <string name="data0_title4">店舗C</string>
+    <string name="data0_title4">店舗B</string>
     <string name="data0_content4">5月13日(土)Open19:00 Start19:30</string>
     <string name="data0_detail4">詳細c</string>
     <!--<string name="sing_meaning">歌う</string>-->
 
-    <string name="data0_title5">店舗D</string>
+    <string name="data0_title5">店舗B</string>
     <string name="data0_content5">5月13日(土)Open20:00 Start20:30</string>
     <string name="data0_detail5">詳細d</string>
     <!--<string name="voice_meaning">声</string>-->
 
 
-
-
-
-
-
     <string name="date2">5月15日(月)</string>
-    <string name="data2_title0">店舗E</string>
+    <string name="data2_title0">店舗C</string>
     <string name="data2_content0">5月15日(月)Open19:00 Start19:30</string>
     <string name="data2_detail0">詳細e</string>
     <!--<string name="sing_meaning">歌う</string>-->
 
-    <string name="data2_title1">店舗F</string>
+    <string name="data2_title1">店舗C</string>
     <string name="data2_content1">5月15日(月)Open20:00 Start20:30</string>
     <string name="data2_detail1">詳細f</string>
     <!--<string name="voice_meaning">声</string>-->
 
-    <string name="data2_title2">店舗E</string>
+    <string name="data2_title2">店舗C</string>
     <string name="data2_content2">5月15日(月)Open19:00 Start19:30</string>
     <string name="data2_detail2">詳細e</string>
     <!--<string name="sing_meaning">歌う</string>-->
 
-    <string name="data2_title3">店舗F</string>
+    <string name="data2_title3">店舗C</string>
     <string name="data2_content3">5月15日(月)Open20:00 Start20:30</string>
     <string name="data2_detail3">詳細f</string>
     <!--<string name="voice_meaning">声</string>-->
 
-    <string name="data2_title4">店舗E</string>
+    <string name="data2_title4">店舗C</string>
     <string name="data2_content4">5月15日(月)Open19:00 Start19:30</string>
     <string name="data2_detail4">詳細e</string>
     <!--<string name="sing_meaning">歌う</string>-->
 
-    <string name="data2_title5">店舗F</string>
+    <string name="data2_title5">店舗C</string>
     <string name="data2_content5">5月15日(月)Open20:00 Start20:30</string>
     <string name="data2_detail5">詳細f</string>
     <!--<string name="voice_meaning">声</string>-->

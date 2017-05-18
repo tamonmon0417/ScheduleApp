@@ -18,6 +18,13 @@ public class Card implements Serializable {
 
     }
 
+//    Card card = new Card(String title, String content, String detail, String date);
+//    MainActivity.mCards.add(card);
+//
+//    MainActivity.init();
+//    MainActivity.mCardAdapter.notifyDataSetChanged();
+//    finish();
+
     public Card(int imageId, String title, String content, String detail, String date) {
         this.imageId = imageId;
         this.title = title;
@@ -25,6 +32,8 @@ public class Card implements Serializable {
         this.detail = detail;
         this.date = date;
     }
+
+
 }
 
 

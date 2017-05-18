@@ -29,13 +29,14 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    ArrayList<Card> mCards;
-    ArrayList<Card> mCards0;
-    ArrayList<Card> mCards2;
-    CardAdapter mCardAdapter;
+    static ArrayList<Card> mCards;
+    static ArrayList<Card> yesterDayArray;
+    static ArrayList<Card> todayArray;
+    static ArrayList<Card> tommorowArray;
+    static CardAdapter mCardAdapter;
     ListView mListView;
     ArrayList<Card> showArray;
-    ArrayList<ArrayList<Card>> eventArray;
+    static ArrayList<ArrayList<Card>> eventArray;
     int position = 1;
 
     static Date nowDate = new Date();
@@ -49,58 +50,54 @@ public class MainActivity extends AppCompatActivity {
         mListView = (ListView) findViewById(R.id.listView);
 
         mCards = new ArrayList<Card>();
-
-        mCards.add(new Card(R.drawable.image1, getString(R.string.data1_title0),
-                getString(R.string.data1_content0), getString(R.string.data1_detail0),"2017/5/17"));
-        mCards.add(new Card(R.drawable.image1, getString(R.string.data1_title1),
-                getString(R.string.data1_content1), getString(R.string.data1_detail1),"2017/5/17"));
-        mCards.add(new Card(R.drawable.image1, getString(R.string.data1_title2),
-                getString(R.string.data1_content2), getString(R.string.data1_detail2),"2017/5/17"));
-        mCards.add(new Card(R.drawable.image1, getString(R.string.data1_title3),
-                getString(R.string.data1_content3), getString(R.string.data1_detail3),"2017/5/17"));
-        mCards.add(new Card(R.drawable.image1, getString(R.string.data1_title4),
-                getString(R.string.data1_content4), getString(R.string.data1_detail4,"2017/5/17"),"2017/5/17"));
-        mCards.add(new Card(R.drawable.image1, getString(R.string.data1_title5),
-                getString(R.string.data1_content5), getString(R.string.data1_detail5,"2017/5/17","2017/5/17"),"2017/5/17"));
-
-
-        mCards0 = new ArrayList<Card>();
-
-        mCards0.add(new Card(R.drawable.image1, getString(R.string.data0_title0),
-                getString(R.string.data0_content0), getString(R.string.data0_detail0,"2017/5/17","2017/5/17"),"2017/5/17"));
-        mCards0.add(new Card(R.drawable.image1, getString(R.string.data0_title1),
-                getString(R.string.data0_content1), getString(R.string.data0_detail1,"2017/5/17","2017/5/17"),"2017/5/17"));
-        mCards0.add(new Card(R.drawable.image1, getString(R.string.data0_title2),
-                getString(R.string.data0_content2), getString(R.string.data0_detail2,"2017/5/17"),"2017/5/17"));
-        mCards0.add(new Card(R.drawable.image1, getString(R.string.data0_title3),
-                getString(R.string.data0_content3), getString(R.string.data0_detail3,"2017/5/17"),"2017/5/17"));
-        mCards0.add(new Card(R.drawable.image1, getString(R.string.data0_title4),
-                getString(R.string.data0_content4), getString(R.string.data0_detail4,"2017/5/17"),"2017/5/17"));
-        mCards0.add(new Card(R.drawable.image1, getString(R.string.data0_title5),
-                getString(R.string.data0_content5), getString(R.string.data0_detail5),"2017/5/17"));
-
-        mCards2 = new ArrayList<Card>();
-
-
-        mCards2.add(new Card(R.drawable.image1, getString(R.string.data2_title0),
-                getString(R.string.data2_content0), getString(R.string.data2_detail0),"2017/5/17"));
-        mCards2.add(new Card(R.drawable.image1, getString(R.string.data2_title1),
-                getString(R.string.data2_content1), getString(R.string.data2_detail1),"2017/5/17"));
-        mCards2.add(new Card(R.drawable.image1, getString(R.string.data2_title2),
-                getString(R.string.data2_content2), getString(R.string.data2_detail2),"2017/5/17"));
-        mCards2.add(new Card(R.drawable.image1, getString(R.string.data2_title3),
-                getString(R.string.data2_content3), getString(R.string.data2_detail3),"2017/5/17"));
-        mCards2.add(new Card(R.drawable.image1, getString(R.string.data2_title4),
-                getString(R.string.data2_content4), getString(R.string.data2_detail4),"2017/5/17"));
-        mCards2.add(new Card(R.drawable.image1, getString(R.string.data2_title5),
-                getString(R.string.data2_content5), getString(R.string.data2_detail5),"2017/5/17"));
-
+        yesterDayArray = new ArrayList<Card>();
+        todayArray = new ArrayList<Card>();
+        tommorowArray = new ArrayList<Card>();
 
         eventArray = new ArrayList<>();
 
-        eventArray.add(mCards0);
-        eventArray.add(mCards);
-        eventArray.add(mCards2);
+        mCards.add(new Card(R.drawable.image1, getString(R.string.data1_title0),
+                getString(R.string.data1_content0), getString(R.string.data1_detail0), "2017/05/17"));
+        mCards.add(new Card(R.drawable.image1, getString(R.string.data1_title1),
+                getString(R.string.data1_content1), getString(R.string.data1_detail1), "2017/05/17"));
+        mCards.add(new Card(R.drawable.image1, getString(R.string.data1_title2),
+                getString(R.string.data1_content2), getString(R.string.data1_detail2), "2017/05/17"));
+        mCards.add(new Card(R.drawable.image1, getString(R.string.data1_title3),
+                getString(R.string.data1_content3), getString(R.string.data1_detail3), "2017/05/17"));
+        mCards.add(new Card(R.drawable.image1, getString(R.string.data1_title4),
+                getString(R.string.data1_content4), getString(R.string.data1_detail4, "2017/05/17"), "2017/05/20"));
+        mCards.add(new Card(R.drawable.image1, getString(R.string.data1_title5),
+                getString(R.string.data1_content5), getString(R.string.data1_detail5), "2017/05/20"));
+
+
+        mCards.add(new Card(R.drawable.image1, getString(R.string.data0_title0),
+                getString(R.string.data0_content0), getString(R.string.data0_detail0), "2017/05/18"));
+        mCards.add(new Card(R.drawable.image1, getString(R.string.data0_title1),
+                getString(R.string.data0_content1), getString(R.string.data0_detail1, "2017/05/17", "2017/05/17"), "2017/05/18"));
+        mCards.add(new Card(R.drawable.image1, getString(R.string.data0_title2),
+                getString(R.string.data0_content2), getString(R.string.data0_detail2, "2017/05/17"), "2017/05/18"));
+        mCards.add(new Card(R.drawable.image1, getString(R.string.data0_title3),
+                getString(R.string.data0_content3), getString(R.string.data0_detail3, "2017/05/17"), "2017/05/18"));
+        mCards.add(new Card(R.drawable.image1, getString(R.string.data0_title4),
+                getString(R.string.data0_content4), getString(R.string.data0_detail4, "2017/05/17"), "2017/05/18"));
+        mCards.add(new Card(R.drawable.image1, getString(R.string.data0_title5),
+                getString(R.string.data0_content5), getString(R.string.data0_detail5), "2017/05/18"));
+
+        mCards.add(new Card(R.drawable.image1, getString(R.string.data2_title0),
+                getString(R.string.data2_content0), getString(R.string.data2_detail0), "2017/05/16"));
+        mCards.add(new Card(R.drawable.image1, getString(R.string.data2_title1),
+                getString(R.string.data2_content1), getString(R.string.data2_detail1), "2017/05/16"));
+        mCards.add(new Card(R.drawable.image1, getString(R.string.data2_title2),
+                getString(R.string.data2_content2), getString(R.string.data2_detail2), "2017/05/16"));
+        mCards.add(new Card(R.drawable.image1, getString(R.string.data2_title3),
+                getString(R.string.data2_content3), getString(R.string.data2_detail3), "2017/05/16"));
+        mCards.add(new Card(R.drawable.image1, getString(R.string.data2_title4),
+                getString(R.string.data2_content4), getString(R.string.data2_detail4), "2017/05/16"));
+        mCards.add(new Card(R.drawable.image1, getString(R.string.data2_title5),
+                getString(R.string.data2_content5), getString(R.string.data2_detail5), "2017/05/16"));
+
+
+        init();
 
         showArray = new ArrayList<>();//showArrayを宣言
 
@@ -188,9 +185,70 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.date);
         textView.setText(strDate);
 
+//        コンテンツ追加
+        Button input = (Button) findViewById(R.id.inputButton);
+        input.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, InputActivity.class);
+                startActivity(intent);
 
+
+            }
+        });
     }
 
+
+    static public void init() {
+
+
+        Date date = new Date();
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        cal.add(Calendar.DAY_OF_MONTH, -1);
+        String yesteerdayDate = new SimpleDateFormat("yyyy/MM/dd", Locale.US).format(cal.getTime());
+
+        String todayDate = new SimpleDateFormat("yyyy/MM/dd", Locale.US).format(nowDate);
+
+        Calendar cal2 = Calendar.getInstance();
+        cal2.setTime(date);
+        cal2.add(Calendar.DAY_OF_MONTH, 1);
+        String tomorowDate = new SimpleDateFormat("yyyy/MM/dd", Locale.US).format(cal2.getTime());
+
+
+        Log.e("TAG1", yesteerdayDate);
+        Log.e("TAG2", todayDate);
+        Log.e("TAG3", tomorowDate);
+
+        todayArray.clear();
+        yesterDayArray.clear();
+        tommorowArray.clear();
+        eventArray.clear();
+
+        for (int i = 0; i < mCards.size(); i++) {
+
+            Log.e("TAG@", mCards.get(i).date);
+
+            if (mCards.get(i).date.equals(todayDate)) {
+                todayArray.add(mCards.get(i));
+                Log.e("TAG", "today");
+            } else if (mCards.get(i).date.equals(yesteerdayDate)) {
+                yesterDayArray.add(mCards.get(i));
+                Log.e("TAG", "yos");
+            } else if (mCards.get(i).date.equals(tomorowDate)) {
+                tommorowArray.add(mCards.get(i));
+                Log.e("TAG", "tomo");
+            }
+        }
+
+
+        eventArray.add(yesterDayArray);
+        eventArray.add(todayArray);
+        eventArray.add(tommorowArray);
+
+
+
+    }
 
 }
 

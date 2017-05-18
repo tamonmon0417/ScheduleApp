@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".DetailActivity" />
-        <activity android:name=".DateActivity"></activity>
+        <activity android:name=".DateActivity" />
+        <activity android:name=".InputActivity"></activity>
     </application>
 
 </manifest>
