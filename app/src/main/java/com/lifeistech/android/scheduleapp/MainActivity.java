@@ -239,12 +239,20 @@ public class MainActivity extends AppCompatActivity {
                 tommorowArray.add(mCards.get(i));
                 Log.e("TAG", "tomo");
             }
+
         }
 
 
         eventArray.add(yesterDayArray);
         eventArray.add(todayArray);
         eventArray.add(tommorowArray);
+
+        Card card = new Card((String)title, (String)content, (String)detail, (String)date);
+        MainActivity.mCards.add(card);
+
+        MainActivity.init();
+        MainActivity.mCardAdapter.notifyDataSetChanged();
+        finish();
 
 
 
