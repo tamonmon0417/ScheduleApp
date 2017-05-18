@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import android.util.Log;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,6 +13,7 @@ public class DetailActivity extends AppCompatActivity {
     TextView titleTextView;
     TextView likeTextView;
     TextView contentTextView;
+    TextView detailTextView;
     ImageView likeButton;
 
     @Override
@@ -31,6 +30,7 @@ public class DetailActivity extends AppCompatActivity {
         titleTextView = (TextView) findViewById(R.id.titele_textview);
 //        likeTextView = (TextView) findViewById(R.id.like_textview);
         contentTextView = (TextView) findViewById(R.id.content);
+        detailTextView = (TextView) findViewById(R.id.detail);
 //        likeButton = (ImageView) findViewById(R.id.like_button);
 
         Intent intent = getIntent();
@@ -38,7 +38,8 @@ public class DetailActivity extends AppCompatActivity {
 //        Log.d("TAG", card.detail);
         iconImageView.setImageResource(card.imageId);
         titleTextView.setText(card.title);
-        contentTextView.setText(card.detail);
+        contentTextView.setText(card.content);
+        detailTextView.setText(card.detail);
 
 
 

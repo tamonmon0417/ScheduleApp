@@ -1,7 +1,5 @@
 package com.lifeistech.android.scheduleapp;
 
-import android.content.Intent;
-import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -30,19 +28,16 @@ public class InputActivity extends AppCompatActivity {
 
         titleEditText = (EditText) findViewById(R.id.title);
         contentEditText = (EditText) findViewById(R.id.content);
-        detailEditText = (EditText) findViewById(R.id.detail);
+        detailEditText = (EditText) findViewById(R.id.content);
         dateEditText = (EditText) findViewById(R.id.date);
 
 
-        titleEditText.selectAll();
-        contentEditText.selectAll();
-        detailEditText.selectAll();
-        dateEditText.selectAll();
+//        titleEditText.selectAll();
+//        contentEditText.selectAll();
+//        detailEditText.selectAll();
+//        dateEditText.selectAll();
 
-        final String title = titleEditText.getText() .toString();
-        final String content = contentEditText.getText() .toString();
-        final String detail = detailEditText.getText() .toString();
-        final String date = titleEditText.getText() .toString();
+
         final int imageId = R.drawable.image1;
 
 
@@ -51,6 +46,10 @@ public class InputActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                title = titleEditText.getText().toString();
+                content = contentEditText.getText().toString();
+                detail = detailEditText.getText().toString();
+                date = dateEditText.getText().toString();
 
                 Card card = new Card(imageId, title, content, detail, date);
                 MainActivity.mCards.add(card);
