@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,6 +14,7 @@ public class InputActivity extends AppCompatActivity {
     public String content;
     public String detail;
     public String date;
+    public int imageId;
 
     EditText titleEditText;
     EditText contentEditText;
@@ -31,15 +33,17 @@ public class InputActivity extends AppCompatActivity {
         detailEditText = (EditText) findViewById(R.id.detail);
         dateEditText = (EditText) findViewById(R.id.date);
 
+
         titleEditText.selectAll();
         contentEditText.selectAll();
         detailEditText.selectAll();
         dateEditText.selectAll();
 
-        final String titele_textview = titleEditText.getText() .toString();
+        final String title = titleEditText.getText() .toString();
         final String content = contentEditText.getText() .toString();
         final String detail = detailEditText.getText() .toString();
         final String date = titleEditText.getText() .toString();
+        final int imageId = R.drawable.image1;
 
 
         Button input = (Button) findViewById(R.id.inputButton);
@@ -48,12 +52,17 @@ public class InputActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                Card card = new Card(titele_textview, content, detail, date);
+                Card card = new Card(imageId, title, content, detail, date);
                 MainActivity.mCards.add(card);
 
                 MainActivity.init();
                 MainActivity.mCardAdapter.notifyDataSetChanged();
                 finish();
+                Log.e("TAG",date);
+                Log.e("TAG",detail);
+                Log.e("TAG",content);
+                Log.e("TAG",title);
+//                Log.e("TAG",imageId);
 
 
 
