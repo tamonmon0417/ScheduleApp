@@ -1,4 +1,4 @@
-package com.lifeistech.android.scheduleapp;
+package com.tamonmon.android.scheduleapp;
 
 /**
  * Created by tamon okamoto on 2017/05/11.
@@ -45,7 +45,7 @@ public class CardAdapter extends ArrayAdapter<Card>{
             iconImageView = (ImageView) view.findViewById(R.id.icon);
             titleTextView = (TextView) view.findViewById(R.id.titele_textview);
 //            likeTextView = (TextView) view.findViewById(R.id.like_textview);
-            contentTextView = (TextView) view.findViewById(R.id.content);
+            contentTextView = (TextView) view.findViewById(R.id.detail);
 //            likeButton = (ImageView) view.findViewById(R.id.like_button);
 
         }

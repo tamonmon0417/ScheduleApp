@@ -1,4 +1,4 @@
-package com.lifeistech.android.scheduleapp;
+package com.tamonmon.android.scheduleapp;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

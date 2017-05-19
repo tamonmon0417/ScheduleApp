@@ -1,4 +1,4 @@
-package com.lifeistech.android.scheduleapp;
+package com.tamonmon.android.scheduleapp;
 
 import java.io.Serializable;
 

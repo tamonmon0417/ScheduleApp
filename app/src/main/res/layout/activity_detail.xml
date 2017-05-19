@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.lifeistech.android.scheduleapp.DetailActivity"
+    tools:context="com.tamonmon.android.scheduleapp.DetailActivity"
     android:layout_height="wrap_content">
 
     <LinearLayout
@@ -30,11 +30,11 @@
                 android:layout_gravity="center"
                 android:text="Sample Text"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textSize="@dimen/text_size_title"
+                android:textSize="30sp"
                 android:textStyle="bold"
                 android:layout_below="@+id/linearLayout2"
-                android:layout_alignRight="@+id/content"
-                android:layout_alignEnd="@+id/content" />
+                android:layout_alignRight="@+id/detail"
+                android:layout_alignEnd="@+id/detail" />
 
             <ImageView
                 android:id="@+id/icon"
@@ -53,7 +53,7 @@
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal|top"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textSize="@dimen/text_size_content"/>
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/detail"

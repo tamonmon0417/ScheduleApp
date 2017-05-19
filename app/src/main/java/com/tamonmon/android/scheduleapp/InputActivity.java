@@ -1,4 +1,4 @@
-package com.lifeistech.android.scheduleapp;
+package com.tamonmon.android.scheduleapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -28,7 +28,7 @@ public class InputActivity extends AppCompatActivity {
 
         titleEditText = (EditText) findViewById(R.id.title);
         contentEditText = (EditText) findViewById(R.id.content);
-        detailEditText = (EditText) findViewById(R.id.content);
+        detailEditText = (EditText) findViewById(R.id.detail);
         dateEditText = (EditText) findViewById(R.id.date);
 
 

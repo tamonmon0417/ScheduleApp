@@ -62,7 +62,7 @@
             </LinearLayout>
             
             <TextView
-                android:id="@+id/content"
+                android:id="@+id/detail"
                 android:layout_width="177dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center_horizontal|top"

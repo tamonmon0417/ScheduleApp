@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.lifeistech.android.scheduleapp.DateActivity">
+    tools:context="com.tamonmon.android.scheduleapp.DateActivity">
 
     <LinearLayout
         android:orientation="vertical"
