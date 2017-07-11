@@ -11,20 +11,20 @@
     tools:context="com.tamonmon.android.scheduleapp.DateActivity">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     </LinearLayout>
 
     <EditText
+        android:id="@+id/editText"
         android:layout_width="127dp"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:id="@+id/editText"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:gravity="center_vertical|center" />
+        android:gravity="center_vertical|center"
+        android:inputType="textPersonName"
+        android:text="Name" />
 
 </RelativeLayout>

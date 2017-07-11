@@ -88,8 +88,6 @@ public class MainActivity extends AppCompatActivity {
                 getString(R.string.data2_content5), getString(R.string.data2_detail5), "2017/05/20"));
 
 
-
-
         showArray = new ArrayList<>();//showArrayを宣言
         mCardAdapter = new CardAdapter(this, R.layout.card, showArray);
 
@@ -112,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
                     cal.add(Calendar.DAY_OF_MONTH, -1);
                     nowDate = cal.getTime();
 
-                    String strDate = new SimpleDateFormat("yyyy-MM-dd", Locale.US).format(cal.getTime());
+                    String strDate = new SimpleDateFormat("yyyy-MM-dd", Locale.JAPAN).format(cal.getTime());
                     Log.e("TAG", strDate);
 
                     TextView textView = (TextView) findViewById(R.id.date);
@@ -140,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
                     nowDate = cal.getTime();//基準を更新
 
 
-                    String strDate = new SimpleDateFormat("yyyy-MM-dd", Locale.US).format(cal.getTime());
+                    String strDate = new SimpleDateFormat("yyyy-MM-dd", Locale.JAPAN).format(cal.getTime());
                     Log.e("TAG", strDate);
 
                     TextView textView = (TextView) findViewById(R.id.date);
@@ -166,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
 //        日付表示
 
         // yyyy-MM-dd形式へ
-        String strDate = new SimpleDateFormat("yyyy-MM-dd", Locale.US).format(nowDate);
+        String strDate = new SimpleDateFormat("yyyy-MM-dd", Locale.JAPAN).format(nowDate);
 //        Calendar cal = Calendar.getInstance();
         // 翌日
 
@@ -195,14 +193,14 @@ public class MainActivity extends AppCompatActivity {
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
         cal.add(Calendar.DAY_OF_MONTH, -1);
-        String yesteerdayDate = new SimpleDateFormat("yyyy/MM/dd", Locale.US).format(cal.getTime());
+        String yesteerdayDate = new SimpleDateFormat("yyyy/MM/dd", Locale.JAPAN).format(cal.getTime());
 
-        String todayDate = new SimpleDateFormat("yyyy/MM/dd", Locale.US).format(date);
+        String todayDate = new SimpleDateFormat("yyyy/MM/dd", Locale.JAPAN).format(date);
 
         Calendar cal2 = Calendar.getInstance();
         cal2.setTime(date);
         cal2.add(Calendar.DAY_OF_MONTH, 1);
-        String tomorowDate = new SimpleDateFormat("yyyy/MM/dd", Locale.US).format(cal2.getTime());
+        String tomorowDate = new SimpleDateFormat("yyyy/MM/dd", Locale.JAPAN).format(cal2.getTime());
 
 
         Log.e("TAG1", yesteerdayDate);
@@ -242,7 +240,6 @@ public class MainActivity extends AppCompatActivity {
         showArray.clear();
         showArray.addAll(eventArray.get(position));
         mCardAdapter.notifyDataSetChanged();
-
 
 
     }
