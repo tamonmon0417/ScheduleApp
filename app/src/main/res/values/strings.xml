@@ -1,37 +1,106 @@
 <resources>
     <string name="app_name">ScheduleApp</string>
 
-    <string name="sing_title">店舗A</string>
-    <string name="sing_content">Open19:00 Start19:30</string>
-    <string name="sing_detail">detal_song</string>
+    <string name="date">5月14日(日)</string>
+    <string name="data1_title0">店舗A</string>
+    <string name="data1_content0">Open19:00 Start19:30</string>
+    <string name="data1_detail0">
+
+xxxx New Special Quintet
+xxxx: soprano sax
+yyyy: trumpet
+zzzz: piano
+Adv. ¥3,000- / Door. ¥3,500-
+世代を超えた素晴らしいメンバーです。初出演にして初リーダーでの緊急ブッキングしていただきました。
+        ありがとうございます。広いお店なので本当に沢山の人にきていただきたいです。よろしくお願い致します。</string>
     <!--<string name="sing_meaning">歌う</string>-->
 
-    <string name="voice_title">店舗B</string>
-    <string name="voice_content">Open20:00 Start20:30</string>
-    <string name="voice_detail">detal_voice</string>
+    <string name="data1_title1">店舗B</string>
+    <string name="data1_content1">Open20:00 Start20:30</string>
+    <string name="data1_detail1">詳細b</string>
     <!--<string name="voice_meaning">声</string>-->
 
-    <string name="sing_title0">店舗C</string>
-    <string name="sing_content0">Open19:00 Start19:30</string>
-    <string name="sing_detail0">detal_song</string>
+    <string name="data1_title2">店舗C</string>
+    <string name="data1_content2">Open19:00 Start19:30</string>
+    <string name="data1_detail2">詳細c</string>
     <!--<string name="sing_meaning">歌う</string>-->
 
-    <string name="voice_title0">店舗D</string>
-    <string name="voice_content0">Open20:00 Start20:30</string>
-    <string name="voice_detail0">detal_voice</string>
-    <!--<string name="voice_meaning">声</string>-->
+    <string name="data1_title3">店舗D</string>
+    <string name="data1_content3">Open20:00 Start20:30</string>
+    <string name="data1_detail3">詳細d</string>
 
-    <string name="sing_title2">店舗E</string>
-    <string name="sing_content2">Open19:00 Start19:30</string>
-    <string name="sing_detail2">detal_song</string>
+    <string name="data1_title4">店舗E</string>
+    <string name="data1_content4">Open19:00 Start19:30</string>
+    <string name="data1_detail4">詳細e</string>
     <!--<string name="sing_meaning">歌う</string>-->
 
-    <string name="voice_title2">店舗F</string>
-    <string name="voice_content2">Open20:00 Start20:30</string>
-    <string name="voice_detail2">detal_voice</string>
+    <string name="data1_title5">店舗F</string>
+    <string name="data1_content5">Open20:00 Start20:30</string>
+    <string name="data1_detail5">詳細f</string>
+
+
+    <string name="date0">5月13日(土)</string>
+    <string name="data0_title0">店舗A</string>
+    <string name="data0_content0">Open19:00 Start19:30</string>
+    <string name="data0_detail0">詳細aa</string>
+    <!--<string name="sing_meaning">歌う</string>-->
+
+    <string name="data0_title1">店舗B</string>
+    <string name="data0_content1">Open20:00 Start20:30</string>
+    <string name="data0_detail1">詳細b</string>
+    <!--<string name="voice_meaning">声</string>-->
+
+    <string name="data0_title2">店舗C</string>
+    <string name="data0_content2">Open19:00 Start19:30</string>
+    <string name="data0_detail2">詳細c</string>
+    <!--<string name="sing_meaning">歌う</string>-->
+
+    <string name="data0_title3">店舗D</string>
+    <string name="data0_content3">Open20:00 Start20:30</string>
+    <string name="data0_detail3">詳細d</string>
+    <!--<string name="voice_meaning">声</string>-->
+
+    <string name="data0_title4">店舗E</string>
+    <string name="data0_content4">Open19:00 Start19:30</string>
+    <string name="data0_detail4">詳細e</string>
+    <!--<string name="sing_meaning">歌う</string>-->
+
+    <string name="data0_title5">店舗F</string>
+    <string name="data0_content5">Open20:00 Start20:30</string>
+    <string name="data0_detail5">詳細f</string>
     <!--<string name="voice_meaning">声</string>-->
 
 
+    <string name="date2">5月15日(月)</string>
+    <string name="data2_title0">店舗C</string>
+    <string name="data2_content0">Open19:00 Start19:30</string>
+    <string name="data2_detail0">詳細e</string>
+    <!--<string name="sing_meaning">歌う</string>-->
+
+    <string name="data2_title1">店舗C</string>
+    <string name="data2_content1">Open20:00 Start20:30</string>
+    <string name="data2_detail1">詳細f</string>
+    <!--<string name="voice_meaning">声</string>-->
+
+    <string name="data2_title2">店舗A</string>
+    <string name="data2_content2">Open19:00 Start19:30</string>
+    <string name="data2_detail2">詳細e</string>
+    <!--<string name="sing_meaning">歌う</string>-->
+
+    <string name="data2_title3">店舗B</string>
+    <string name="data2_content3">Open20:00 Start20:30</string>
+    <string name="data2_detail3">詳細f</string>
+    <!--<string name="voice_meaning">声</string>-->
+
+    <string name="data2_title4">店舗C</string>
+    <string name="data2_content4">Open19:00 Start19:30</string>
+    <string name="data2_detail4">詳細e</string>
+    <!--<string name="sing_meaning">歌う</string>-->
+
+    <string name="data2_title5">店舗D</string>
+    <string name="data2_content5">Open20:00 Start20:30</string>
+    <string name="data2_detail5">詳細f</string>
+    <!--<string name="voice_meaning">声</string>-->
 
 
 </resources>

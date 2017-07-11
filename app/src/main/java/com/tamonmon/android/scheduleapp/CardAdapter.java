@@ -1,20 +1,16 @@
-package com.lifeistech.android.scheduleapp;
+package com.tamonmon.android.scheduleapp;
 
 /**
  * Created by tamon okamoto on 2017/05/11.
  */
 
 import android.content.Context;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import java.util.List;
 
@@ -48,12 +44,14 @@ public class CardAdapter extends ArrayAdapter<Card>{
         public ViewHolder(View view){
             iconImageView = (ImageView) view.findViewById(R.id.icon);
             titleTextView = (TextView) view.findViewById(R.id.titele_textview);
-            likeTextView = (TextView) view.findViewById(R.id.like_textview);
-            contentTextView = (TextView) view.findViewById(R.id.content);
-            likeButton = (ImageView) view.findViewById(R.id.like_button);
+//            likeTextView = (TextView) view.findViewById(R.id.like_textview);
+            contentTextView = (TextView) view.findViewById(R.id.detail);
+//            likeButton = (ImageView) view.findViewById(R.id.like_button);
 
         }
     }
+
+
 
 
 
@@ -74,19 +72,20 @@ public class CardAdapter extends ArrayAdapter<Card>{
             viewHolder.iconImageView.setBackgroundResource(item.imageId);
             viewHolder.titleTextView.setText(item.title);
             viewHolder.contentTextView.setText(item.content);
-            viewHolder.likeButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    item.likeNum++;
-                    viewHolder.likeTextView.setText(item.likeNum + "Likes");
-                }
-            });
+//            viewHolder.likeButton.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    item.likeNum++;
+//                    viewHolder.likeTextView.setText(item.likeNum + "Likes");
+//                }
+//            });
 //            viewHolder.iconImageView.setOnClickListener(new View.OnClickListener(){
 //                @Override
 //                public void onClick(View v){
 //                    Toast.makeText(getContext(), item.meaning, Toast.LENGTH_SHORT).show();
 //                }
 //            });
+
         }
 
         return convertView;
